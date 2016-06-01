@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#e6964b</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="avatar_border">#ffffff</color>
+    <color name="avatar_progress_back">#726DC0</color>
+    <color name="avatar_progress_front">#FC9801</color>
+    <color name="avatar_progress_front_cap">#EDEDED</color>
+</resources>
