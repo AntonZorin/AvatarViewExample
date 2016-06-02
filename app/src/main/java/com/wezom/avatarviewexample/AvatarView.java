@@ -28,9 +28,9 @@ public class AvatarView extends ImageView {
     final Paint mProgressBackgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
     final Paint mProgressFrontPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
     final Paint mProgressFrontCapPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-    final Paint mLevelsCirclePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
     final Paint mBitmapPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-
+    //    final Paint mLevelsCirclePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+    
     TextPaint mLevelTextPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
     TextPaint mLikeTextPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
 
@@ -80,7 +80,7 @@ public class AvatarView extends ImageView {
         mProgressFrontPaint.setStrokeWidth(mBoarderWidth);
         mProgressFrontCapPaint.setColor(r.getColor(R.color.avatar_progress_front_cap));
 
-        mLevelsCirclePaint.setColor(r.getColor(R.color.avatar_progress_front));
+//        mLevelsCirclePaint.setColor(r.getColor(R.color.avatar_progress_front));
 
         //mLevelText ops
         mLevelTextPaint.setColor(r.getColor(R.color.colorWhite));
@@ -181,7 +181,7 @@ public class AvatarView extends ImageView {
         canvas.save();
         canvas.rotate(mProgressDegrees, mBoundaryRect.centerX(), mBoundaryRect.centerY());
         canvas.rotate(-mProgressDegrees, mBoundaryRect.centerX(), mPadding - mLevelTextRect.centerY());
-        canvas.drawBitmap(mLevelBitmap, mBoundaryRect.centerX() - mLevelBitmapRect.centerX(), mLevelBitmapRect.centerY() + mLevelTextRect.centerY() / 2, mBitmapPaint);
+        canvas.drawBitmap(mLevelBitmap, mBoundaryRect.centerX() - mLevelBitmapRect.centerX(), mLevelBitmapRect.centerY() + mLevelTextRect.centerY() * 0.5f, mBitmapPaint);
         canvas.restore();
 
 
