@@ -12,7 +12,13 @@
 
     <com.wezom.avatarviewexample.AvatarView
         android:id="@+id/circularView"
-        android:layout_width="160dp"
+        android:layout_width="250dp"
         android:layout_height="250dp"
         android:src="@drawable/ic_default_user_big"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circularView"/>
 </RelativeLayout>
